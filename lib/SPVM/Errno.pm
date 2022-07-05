@@ -11,26 +11,23 @@ SPVM::Errno - Errno is a SPVM module
 =head1 Synopsys
 
   use Errno;
+  my $errno = Errno->errno;
   
 =head1 Description
 
 C<Errno> is a L<SPVM> module.
 
-=head1 Field Methods
-
-
-
 =head1 Class Methods
 
+=head2 errno
 
+  static method errno : int ()
 
-=head1 Instance Methods
-
-
+Get error number. This is the same as C<errno> defined in C<errno.h> of C<C language>.
 
 =head1 Repository
 
-
+L<https://github.com/yuki-kimoto/SPVM-Errno>
 
 =head1 Author
 

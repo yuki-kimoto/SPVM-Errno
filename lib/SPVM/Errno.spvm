@@ -1,3 +1,3 @@
 class Errno {
-
+  native static method errno : int ();
 }
