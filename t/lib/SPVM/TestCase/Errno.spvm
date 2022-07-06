@@ -2,6 +2,12 @@ class TestCase::Errno {
   use Errno;
   static method test : int () {
     
+    Errno->set_errno(Errno->EAGAIN);
+    my $errno = Errno->errno;
+    unless ($errno == Errno->EAGAIN) {
+      return 0;
+    }
+    
     return 1;
   }
 }
