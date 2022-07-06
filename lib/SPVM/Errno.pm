@@ -18,7 +18,7 @@ SPVM::Errno - Error Number
 
 =head1 Description
 
-C<Errno> is a L<SPVM> module to get the system error number.
+C<Errno> is a L<SPVM> module to manipulate system error numbers.
 
 =head1 Caution
 
