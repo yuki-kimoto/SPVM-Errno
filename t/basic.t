@@ -35,7 +35,7 @@ sub errno_ok {
   }
 }
 
-ok(SPVM::TestCase::Errno->test);
+ok(SPVM::TestCase::Errno->errno);
 
 {
   errno_ok('E2BIG');
