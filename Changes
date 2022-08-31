@@ -1,3 +1,7 @@
+0.05 2022-08-31
+  [Bug Fix]
+    * Fux the bug that native file name is wrong. This is changed from "Sys/Stat.c" to "Sys/Errno.c".
+    
 0.04 2022-07-12
   [Fix Testing Bugs]
     * Fix the testing bug that when a errno doesn't eixsts in the system, the test fails.

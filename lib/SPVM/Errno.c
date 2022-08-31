@@ -2,7 +2,7 @@
 
 #include <errno.h>
 
-const char* FILE_NAME = "Errno.c";
+const char* FILE_NAME = "Sys/Errno.c";
 
 int32_t SPVM__Errno__errno(SPVM_ENV* env, SPVM_VALUE* stack) {
   
