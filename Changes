@@ -1,6 +1,6 @@
 0.05 2022-08-31
   [Requirement Changes]
-    * Need SPVM 0.9648.
+    * SPVM 0.9648 is required.
   [Bug Fix]
     * Fux the bug that native file name is wrong. This is changed from "Sys/Stat.c" to "Sys/Errno.c".
     
