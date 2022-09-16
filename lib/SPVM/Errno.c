@@ -2,6 +2,10 @@
 
 #include <errno.h>
 
+#ifdef _WIN32
+# include <winsock2.h>
+#else
+
 const char* FILE_NAME = "Sys/Errno.c";
 
 int32_t SPVM__Errno__errno(SPVM_ENV* env, SPVM_VALUE* stack) {
