@@ -4,7 +4,7 @@
 
 #ifdef _WIN32
 # include <winsock2.h>
-#else
+#endif
 
 const char* FILE_NAME = "Sys/Errno.c";
 
