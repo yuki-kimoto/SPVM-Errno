@@ -1,3 +1,7 @@
+0.06 2022-09-16
+  [Test Fix]
+    * Fix the test bug that the tests failed on Windows.
+
 0.05 2022-08-31
   [Incompativle Changes]
     * All constant methods set the class id of Error::NotSupported to the error if the constant is not supported on the system.

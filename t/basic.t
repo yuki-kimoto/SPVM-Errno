@@ -19,19 +19,17 @@ sub errno_ok {
   
   my $errno_perl_func = "Errno::$errno_func_name";
   
-  my $success;
-  if (exists $!{$errno_func_name}) {
-    no strict 'refs';
-    $success = is(SPVM::Errno->$errno_func_name, &$errno_perl_func);
+  my $match;
+  eval { SPVM::Errno->$errno_func_name };
+  if ($@) {
+    warn "\"$errno_func_name\" is not supported on this system";
   }
   else {
-    eval { SPVM::Errno->$errno_func_name };
-    my $error = $@;
-    $success = like($error, qr/not defined/);
-  }
-  
-  unless ($success) {
-    warn "$errno_func_name test failed at $file $line\n";
+    no strict 'refs';
+    my $errno = SPVM::Errno->$errno_func_name;
+    my $errno_expected = &$errno_perl_func;
+    is($errno, $errno_expected);
+    warn "$errno_func_name: $errno";
   }
 }
 
