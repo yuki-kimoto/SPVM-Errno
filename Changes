@@ -1,4 +1,7 @@
 0.06 2022-09-16
+  [Prerequirement Changes]
+    * SPVM 0.9691+ is needed.
+0.06 2022-09-16
   [New Features]
     * Add the methods that return the error numbers of Winsock to the Errno class.
     
