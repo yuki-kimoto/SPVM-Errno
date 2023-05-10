@@ -1,3 +1,6 @@
+0.090 2023-05-10
+  [License Change]
+    * The license is changed to MIT License.
 0.08 2023-04-08
   [Changes]
     * Removed unneeded cpanm file.
