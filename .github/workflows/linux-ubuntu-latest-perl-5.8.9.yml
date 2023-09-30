@@ -22,5 +22,4 @@ jobs:
       - run: perl cpanm -L ~/mylib -n SPVM
       - run: echo "PERL5LIB=$HOME/mylib/lib/perl5:$HOME/mylib/lib/perl5/"$(perl -MConfig -e 'print $Config{archname}') >> $GITHUB_ENV
       - run: perl Makefile.PL
-      - run: make
       - run: make disttest
