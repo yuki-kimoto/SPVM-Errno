@@ -1,6 +1,6 @@
 package SPVM::Errno;
 
-our $VERSION = "0.090003";
+our $VERSION = "0.091";
 
 1;
 
@@ -36,9 +36,9 @@ Sets the value of C<errno>.
 
 =head2 strerror
 
-  static method strerror : string ($errno : int, $max_length = 0);
+  static method strerror : string ($errno : int, $length = 0);
 
-Gets the error message corresponding to C<errno> given maximum number of characters $max_length.
+Gets the error message corresponding to C<errno> given enough length $max_length to hold the error message.
 
 If $max_length is 0, an appropriate default value is set.
 
