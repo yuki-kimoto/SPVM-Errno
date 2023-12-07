@@ -38,6 +38,21 @@ sub errno_ok {
 
 ok(SPVM::TestCase::Errno->errno);
 
+ok(SPVM::TestCase::Errno->set_errno);
+
+{
+  {
+    SPVM::Errno->set_errno(Errno->EINVAL);
+    
+    $! = Errno->EINVAL;
+    
+    my $strerror = SPVM::Errno->strerror(Errno->EINVAL);
+    
+    warn "[Test Output]strerror:$strerror";
+    is($strerror, "$!");
+  }
+}
+
 {
   errno_ok('E2BIG');
 }

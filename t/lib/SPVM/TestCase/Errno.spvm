@@ -1,6 +1,18 @@
 class TestCase::Errno {
   use Errno;
+  
   static method errno : int () {
+    
+    Errno->set_errno(3);
+    my $errno = Errno->errno;
+    unless ($errno == 3) {
+      return 0;
+    }
+    
+    return 1;
+  }
+  
+  static method set_errno : int () {
     
     Errno->set_errno(3);
     my $errno = Errno->errno;

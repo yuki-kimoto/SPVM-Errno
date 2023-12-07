@@ -30,6 +30,10 @@ int32_t SPVM__Errno__strerror(SPVM_ENV* env, SPVM_VALUE* stack) {
   int32_t error_number = stack[0].ival;
   int32_t length = stack[1].ival;
   
+  if (!(length >= 0)) {
+    return env->die(env, stack, "$max_length must be greater than or equal to 0.", __func__, FILE_NAME, __LINE__);
+  }
+  
   void* obj_strerror = env->strerror_string(env, stack, error_number, length);
   
   stack[0].oval = obj_strerror;

@@ -8,7 +8,7 @@ class Errno {
   
   native static method set_errno : void ($errno : int);
   
-  native static method strerror : string ($errno : int, $max_length = 0);
+  native static method strerror : string ($errno : int, $max_length : int = 0);
   
   native static method E2BIG : int ();
   

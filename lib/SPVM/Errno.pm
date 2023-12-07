@@ -20,7 +20,7 @@ The Errno class of L<SPVM> has methods to manipulate L<errno|https://linux.die.n
   
   my $eagain = Errno->EAGAIN;
   
-  my $errstring = Errno->
+  my $strerror = Errno->strerror($errno);
 
 =head2 errno
 
@@ -40,7 +40,7 @@ Sets the value of C<errno>.
 
 Gets the error message corresponding to C<errno> given maximum number of characters $max_length.
 
-If $max_length is 0, appropriate default values is set.
+If $max_length is 0, an appropriate default value is set.
 
 =head2 E2BIG
 
