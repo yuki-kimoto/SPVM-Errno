@@ -50,7 +50,7 @@ Gets the value of C<E2BIG>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 EACCES
 
@@ -60,7 +60,7 @@ Gets the value of C<EACCES>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 EADDRINUSE
 
@@ -70,7 +70,7 @@ Gets the value of C<EADDRINUSE>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 EADDRNOTAVAIL
 
@@ -80,7 +80,7 @@ Gets the value of C<EADDRNOTAVAIL>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 EAFNOSUPPORT
 
@@ -90,7 +90,7 @@ Gets the value of C<EAFNOSUPPORT>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 EAGAIN
 
@@ -100,7 +100,7 @@ Gets the value of C<EAGAIN>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 EALREADY
 
@@ -110,7 +110,7 @@ Gets the value of C<EALREADY>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 EBADE
 
@@ -120,7 +120,7 @@ Gets the value of C<EBADE>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 EBADF
 
@@ -130,7 +130,7 @@ Gets the value of C<EBADF>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 EBADFD
 
@@ -140,7 +140,7 @@ Gets the value of C<EBADFD>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 EBADMSG
 
@@ -150,7 +150,7 @@ Gets the value of C<EBADMSG>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 EBADR
 
@@ -160,7 +160,7 @@ Gets the value of C<EBADR>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 EBADRQC
 
@@ -170,7 +170,7 @@ Gets the value of C<EBADRQC>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 EBADSLT
 
@@ -180,7 +180,7 @@ Gets the value of C<EBADSLT>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 EBUSY
 
@@ -190,7 +190,7 @@ Gets the value of C<EBUSY>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 ECANCELED
 
@@ -200,7 +200,7 @@ Gets the value of C<ECANCELED>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 ECHILD
 
@@ -210,7 +210,7 @@ Gets the value of C<ECHILD>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 ECHRNG
 
@@ -220,7 +220,7 @@ Gets the value of C<ECHRNG>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 ECOMM
 
@@ -230,7 +230,7 @@ Gets the value of C<ECOMM>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 ECONNABORTED
 
@@ -240,7 +240,7 @@ Gets the value of C<ECONNABORTED>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 ECONNREFUSED
 
@@ -250,7 +250,7 @@ Gets the value of C<ECONNREFUSED>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 ECONNRESET
 
@@ -260,7 +260,7 @@ Gets the value of C<ECONNRESET>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 EDEADLK
 
@@ -270,7 +270,7 @@ Gets the value of C<EDEADLK>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 EDEADLOCK
 
@@ -280,7 +280,7 @@ Gets the value of C<EDEADLOCK>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 EDESTADDRREQ
 
@@ -290,7 +290,7 @@ Gets the value of C<EDESTADDRREQ>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 EDOM
 
@@ -300,7 +300,7 @@ Gets the value of C<EDOM>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 EDQUOT
 
@@ -310,7 +310,7 @@ Gets the value of C<EDQUOT>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 EEXIST
 
@@ -320,7 +320,7 @@ Gets the value of C<EEXIST>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 EFAULT
 
@@ -330,7 +330,7 @@ Gets the value of C<EFAULT>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 EFBIG
 
@@ -340,7 +340,7 @@ Gets the value of C<EFBIG>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 EHOSTDOWN
 
@@ -350,7 +350,7 @@ Gets the value of C<EHOSTDOWN>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 EHOSTUNREACH
 
@@ -360,7 +360,7 @@ Gets the value of C<EHOSTUNREACH>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 EIDRM
 
@@ -370,7 +370,7 @@ Gets the value of C<EIDRM>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 EILSEQ
 
@@ -380,7 +380,7 @@ Gets the value of C<EILSEQ>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 EINPROGRESS
 
@@ -390,7 +390,7 @@ Gets the value of C<EINPROGRESS>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 EINTR
 
@@ -400,7 +400,7 @@ Gets the value of C<EINTR>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 EINVAL
 
@@ -410,7 +410,7 @@ Gets the value of C<EINVAL>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 EIO
 
@@ -420,7 +420,7 @@ Gets the value of C<EIO>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 EISCONN
 
@@ -430,7 +430,7 @@ Gets the value of C<EISCONN>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 EISDIR
 
@@ -440,7 +440,7 @@ Gets the value of C<EISDIR>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 EISNAM
 
@@ -450,7 +450,7 @@ Gets the value of C<EISNAM>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 EKEYEXPIRED
 
@@ -460,7 +460,7 @@ Gets the value of C<EKEYEXPIRED>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 EKEYREJECTED
 
@@ -470,7 +470,7 @@ Gets the value of C<EKEYREJECTED>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 EKEYREVOKED
 
@@ -480,7 +480,7 @@ Gets the value of C<EKEYREVOKED>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 EL2HLT
 
@@ -490,7 +490,7 @@ Gets the value of C<EL2HLT>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 EL2NSYNC
 
@@ -500,7 +500,7 @@ Gets the value of C<EL2NSYNC>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 EL3HLT
 
@@ -510,7 +510,7 @@ Gets the value of C<EL3HLT>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 EL3RST
 
@@ -520,7 +520,7 @@ Gets the value of C<EL3RST>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 ELIBACC
 
@@ -530,7 +530,7 @@ Gets the value of C<ELIBACC>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 ELIBBAD
 
@@ -540,7 +540,7 @@ Gets the value of C<ELIBBAD>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 ELIBMAX
 
@@ -550,7 +550,7 @@ Gets the value of C<ELIBMAX>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 ELIBSCN
 
@@ -560,7 +560,7 @@ Gets the value of C<ELIBSCN>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 ELIBEXEC
 
@@ -570,7 +570,7 @@ Gets the value of C<ELIBEXEC>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 ELOOP
 
@@ -580,7 +580,7 @@ Gets the value of C<ELOOP>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 EMEDIUMTYPE
 
@@ -590,7 +590,7 @@ Gets the value of C<EMEDIUMTYPE>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 EMFILE
 
@@ -600,7 +600,7 @@ Gets the value of C<EMFILE>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 EMLINK
 
@@ -610,7 +610,7 @@ Gets the value of C<EMLINK>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 EMSGSIZE
 
@@ -620,7 +620,7 @@ Gets the value of C<EMSGSIZE>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 EMULTIHOP
 
@@ -630,7 +630,7 @@ Gets the value of C<EMULTIHOP>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 ENAMETOOLONG
 
@@ -640,7 +640,7 @@ Gets the value of C<ENAMETOOLONG>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 ENETDOWN
 
@@ -650,7 +650,7 @@ Gets the value of C<ENETDOWN>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 ENETRESET
 
@@ -660,7 +660,7 @@ Gets the value of C<ENETRESET>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 ENETUNREACH
 
@@ -670,7 +670,7 @@ Gets the value of C<ENETUNREACH>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 ENFILE
 
@@ -680,7 +680,7 @@ Gets the value of C<ENFILE>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 ENOBUFS
 
@@ -690,7 +690,7 @@ Gets the value of C<ENOBUFS>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 ENODATA
 
@@ -700,7 +700,7 @@ Gets the value of C<ENODATA>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 ENODEV
 
@@ -710,7 +710,7 @@ Gets the value of C<ENODEV>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 ENOENT
 
@@ -720,7 +720,7 @@ Gets the value of C<ENOENT>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 ENOEXEC
 
@@ -730,7 +730,7 @@ Gets the value of C<ENOEXEC>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 ENOKEY
 
@@ -740,7 +740,7 @@ Gets the value of C<ENOKEY>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 ENOLCK
 
@@ -750,7 +750,7 @@ Gets the value of C<ENOLCK>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 ENOLINK
 
@@ -760,7 +760,7 @@ Gets the value of C<ENOLINK>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 ENOMEDIUM
 
@@ -770,7 +770,7 @@ Gets the value of C<ENOMEDIUM>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 ENOMEM
 
@@ -780,7 +780,7 @@ Gets the value of C<ENOMEM>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 ENOMSG
 
@@ -790,7 +790,7 @@ Gets the value of C<ENOMSG>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 ENONET
 
@@ -800,7 +800,7 @@ Gets the value of C<ENONET>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 ENOPKG
 
@@ -810,7 +810,7 @@ Gets the value of C<ENOPKG>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 ENOPROTOOPT
 
@@ -820,7 +820,7 @@ Gets the value of C<ENOPROTOOPT>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 ENOSPC
 
@@ -830,7 +830,7 @@ Gets the value of C<ENOSPC>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 ENOSR
 
@@ -840,7 +840,7 @@ Gets the value of C<ENOSR>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 ENOSTR
 
@@ -850,7 +850,7 @@ Gets the value of C<ENOSTR>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 ENOSYS
 
@@ -860,7 +860,7 @@ Gets the value of C<ENOSYS>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 ENOTBLK
 
@@ -870,7 +870,7 @@ Gets the value of C<ENOTBLK>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 ENOTCONN
 
@@ -880,7 +880,7 @@ Gets the value of C<ENOTCONN>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 ENOTDIR
 
@@ -890,7 +890,7 @@ Gets the value of C<ENOTDIR>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 ENOTEMPTY
 
@@ -900,7 +900,7 @@ Gets the value of C<ENOTEMPTY>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 ENOTSOCK
 
@@ -910,7 +910,7 @@ Gets the value of C<ENOTSOCK>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 ENOTSUP
 
@@ -920,7 +920,7 @@ Gets the value of C<ENOTSUP>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 ENOTTY
 
@@ -930,7 +930,7 @@ Gets the value of C<ENOTTY>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 ENOTUNIQ
 
@@ -940,7 +940,7 @@ Gets the value of C<ENOTUNIQ>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 ENXIO
 
@@ -950,7 +950,7 @@ Gets the value of C<ENXIO>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 EOPNOTSUPP
 
@@ -960,7 +960,7 @@ Gets the value of C<EOPNOTSUPP>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 EOVERFLOW
 
@@ -970,7 +970,7 @@ Gets the value of C<EOVERFLOW>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 EPERM
 
@@ -980,7 +980,7 @@ Gets the value of C<EPERM>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 EPFNOSUPPORT
 
@@ -990,7 +990,7 @@ Gets the value of C<EPFNOSUPPORT>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 EPIPE
 
@@ -1000,7 +1000,7 @@ Gets the value of C<EPIPE>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 EPROTO
 
@@ -1010,7 +1010,7 @@ Gets the value of C<EPROTO>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 EPROTONOSUPPORT
 
@@ -1020,7 +1020,7 @@ Gets the value of C<EPROTONOSUPPORT>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 EPROTOTYPE
 
@@ -1030,7 +1030,7 @@ Gets the value of C<EPROTOTYPE>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 ERANGE
 
@@ -1040,7 +1040,7 @@ Gets the value of C<ERANGE>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 EREMCHG
 
@@ -1050,7 +1050,7 @@ Gets the value of C<EREMCHG>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 EREMOTE
 
@@ -1060,7 +1060,7 @@ Gets the value of C<EREMOTE>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 EREMOTEIO
 
@@ -1070,7 +1070,7 @@ Gets the value of C<EREMOTEIO>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 ERESTART
 
@@ -1080,7 +1080,7 @@ Gets the value of C<ERESTART>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 EROFS
 
@@ -1090,7 +1090,7 @@ Gets the value of C<EROFS>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 ESHUTDOWN
 
@@ -1100,7 +1100,7 @@ Gets the value of C<ESHUTDOWN>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 ESPIPE
 
@@ -1110,7 +1110,7 @@ Gets the value of C<ESPIPE>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 ESOCKTNOSUPPORT
 
@@ -1120,7 +1120,7 @@ Gets the value of C<ESOCKTNOSUPPORT>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 ESRCH
 
@@ -1130,7 +1130,7 @@ Gets the value of C<ESRCH>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 ESTALE
 
@@ -1140,7 +1140,7 @@ Gets the value of C<ESTALE>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 ESTRPIPE
 
@@ -1150,7 +1150,7 @@ Gets the value of C<ESTRPIPE>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 ETIME
 
@@ -1160,7 +1160,7 @@ Gets the value of C<ETIME>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 ETIMEDOUT
 
@@ -1170,7 +1170,7 @@ Gets the value of C<ETIMEDOUT>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 ETXTBSY
 
@@ -1180,7 +1180,7 @@ Gets the value of C<ETXTBSY>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 EUCLEAN
 
@@ -1190,7 +1190,7 @@ Gets the value of C<EUCLEAN>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 EUNATCH
 
@@ -1200,7 +1200,7 @@ Gets the value of C<EUNATCH>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 EUSERS
 
@@ -1210,7 +1210,7 @@ Gets the value of C<EUSERS>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 EWOULDBLOCK
 
@@ -1220,7 +1220,7 @@ Gets the value of C<EWOULDBLOCK>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 EXDEV
 
@@ -1230,7 +1230,7 @@ Gets the value of C<EXDEV>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 EXFULL
 
@@ -1240,7 +1240,7 @@ Gets the value of C<EXFULL>.
 
 Exceptions:
 
-If the system does not define this error number, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this error number, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 WSAEACCES
 
@@ -1250,7 +1250,7 @@ Gets the value of C<WSAEACCES>.
 
 Exceptions:
 
-If the system does not define this constant value, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this value, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 WSAEADDRINUSE
 
@@ -1260,7 +1260,7 @@ Gets the value of C<WSAEADDRINUSE>.
 
 Exceptions:
 
-If the system does not define this constant value, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this value, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 WSAEADDRNOTAVAIL
 
@@ -1270,7 +1270,7 @@ Gets the value of C<WSAEADDRNOTAVAIL>.
 
 Exceptions:
 
-If the system does not define this constant value, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this value, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 WSAEAFNOSUPPORT
 
@@ -1280,7 +1280,7 @@ Gets the value of C<WSAEAFNOSUPPORT>.
 
 Exceptions:
 
-If the system does not define this constant value, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this value, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 WSAEALREADY
 
@@ -1290,7 +1290,7 @@ Gets the value of C<WSAEALREADY>.
 
 Exceptions:
 
-If the system does not define this constant value, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this value, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 WSAEBADF
 
@@ -1300,7 +1300,7 @@ Gets the value of C<WSAEBADF>.
 
 Exceptions:
 
-If the system does not define this constant value, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this value, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 WSAECANCELLED
 
@@ -1310,7 +1310,7 @@ Gets the value of C<WSAECANCELLED>.
 
 Exceptions:
 
-If the system does not define this constant value, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this value, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 WSAECONNABORTED
 
@@ -1320,7 +1320,7 @@ Gets the value of C<WSAECONNABORTED>.
 
 Exceptions:
 
-If the system does not define this constant value, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this value, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 WSAECONNREFUSED
 
@@ -1330,7 +1330,7 @@ Gets the value of C<WSAECONNREFUSED>.
 
 Exceptions:
 
-If the system does not define this constant value, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this value, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 WSAECONNRESET
 
@@ -1340,7 +1340,7 @@ Gets the value of C<WSAECONNRESET>.
 
 Exceptions:
 
-If the system does not define this constant value, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this value, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 WSAEDESTADDRREQ
 
@@ -1350,7 +1350,7 @@ Gets the value of C<WSAEDESTADDRREQ>.
 
 Exceptions:
 
-If the system does not define this constant value, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this value, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 WSAEDISCON
 
@@ -1360,7 +1360,7 @@ Gets the value of C<WSAEDISCON>.
 
 Exceptions:
 
-If the system does not define this constant value, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this value, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 WSAEDQUOT
 
@@ -1370,7 +1370,7 @@ Gets the value of C<WSAEDQUOT>.
 
 Exceptions:
 
-If the system does not define this constant value, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this value, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 WSAEFAULT
 
@@ -1380,7 +1380,7 @@ Gets the value of C<WSAEFAULT>.
 
 Exceptions:
 
-If the system does not define this constant value, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this value, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 WSAEHOSTDOWN
 
@@ -1390,7 +1390,7 @@ Gets the value of C<WSAEHOSTDOWN>.
 
 Exceptions:
 
-If the system does not define this constant value, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this value, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 WSAEHOSTUNREACH
 
@@ -1400,7 +1400,7 @@ Gets the value of C<WSAEHOSTUNREACH>.
 
 Exceptions:
 
-If the system does not define this constant value, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this value, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 WSAEINPROGRESS
 
@@ -1410,7 +1410,7 @@ Gets the value of C<WSAEINPROGRESS>.
 
 Exceptions:
 
-If the system does not define this constant value, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this value, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 WSAEINTR
 
@@ -1420,7 +1420,7 @@ Gets the value of C<WSAEINTR>.
 
 Exceptions:
 
-If the system does not define this constant value, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this value, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 WSAEINVAL
 
@@ -1430,7 +1430,7 @@ Gets the value of C<WSAEINVAL>.
 
 Exceptions:
 
-If the system does not define this constant value, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this value, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 WSAEINVALIDPROCTABLE
 
@@ -1440,7 +1440,7 @@ Gets the value of C<WSAEINVALIDPROCTABLE>.
 
 Exceptions:
 
-If the system does not define this constant value, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this value, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 WSAEINVALIDPROVIDER
 
@@ -1450,7 +1450,7 @@ Gets the value of C<WSAEINVALIDPROVIDER>.
 
 Exceptions:
 
-If the system does not define this constant value, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this value, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 WSAEISCONN
 
@@ -1460,7 +1460,7 @@ Gets the value of C<WSAEISCONN>.
 
 Exceptions:
 
-If the system does not define this constant value, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this value, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 WSAELOOP
 
@@ -1470,7 +1470,7 @@ Gets the value of C<WSAELOOP>.
 
 Exceptions:
 
-If the system does not define this constant value, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this value, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 WSAEMFILE
 
@@ -1480,7 +1480,7 @@ Gets the value of C<WSAEMFILE>.
 
 Exceptions:
 
-If the system does not define this constant value, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this value, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 WSAEMSGSIZE
 
@@ -1490,7 +1490,7 @@ Gets the value of C<WSAEMSGSIZE>.
 
 Exceptions:
 
-If the system does not define this constant value, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this value, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 WSAENAMETOOLONG
 
@@ -1500,7 +1500,7 @@ Gets the value of C<WSAENAMETOOLONG>.
 
 Exceptions:
 
-If the system does not define this constant value, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this value, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 WSAENETDOWN
 
@@ -1510,7 +1510,7 @@ Gets the value of C<WSAENETDOWN>.
 
 Exceptions:
 
-If the system does not define this constant value, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this value, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 WSAENETRESET
 
@@ -1520,7 +1520,7 @@ Gets the value of C<WSAENETRESET>.
 
 Exceptions:
 
-If the system does not define this constant value, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this value, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 WSAENETUNREACH
 
@@ -1530,7 +1530,7 @@ Gets the value of C<WSAENETUNREACH>.
 
 Exceptions:
 
-If the system does not define this constant value, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this value, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 WSAENOBUFS
 
@@ -1540,7 +1540,7 @@ Gets the value of C<WSAENOBUFS>.
 
 Exceptions:
 
-If the system does not define this constant value, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this value, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 WSAENOMORE
 
@@ -1550,7 +1550,7 @@ Gets the value of C<WSAENOMORE>.
 
 Exceptions:
 
-If the system does not define this constant value, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this value, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 WSAENOPROTOOPT
 
@@ -1560,7 +1560,7 @@ Gets the value of C<WSAENOPROTOOPT>.
 
 Exceptions:
 
-If the system does not define this constant value, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this value, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 WSAENOTCONN
 
@@ -1570,7 +1570,7 @@ Gets the value of C<WSAENOTCONN>.
 
 Exceptions:
 
-If the system does not define this constant value, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this value, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 WSAENOTEMPTY
 
@@ -1580,7 +1580,7 @@ Gets the value of C<WSAENOTEMPTY>.
 
 Exceptions:
 
-If the system does not define this constant value, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this value, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 WSAENOTSOCK
 
@@ -1590,7 +1590,7 @@ Gets the value of C<WSAENOTSOCK>.
 
 Exceptions:
 
-If the system does not define this constant value, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this value, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 WSAEOPNOTSUPP
 
@@ -1600,7 +1600,7 @@ Gets the value of C<WSAEOPNOTSUPP>.
 
 Exceptions:
 
-If the system does not define this constant value, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this value, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 WSAEPFNOSUPPORT
 
@@ -1610,7 +1610,7 @@ Gets the value of C<WSAEPFNOSUPPORT>.
 
 Exceptions:
 
-If the system does not define this constant value, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this value, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 WSAEPROCLIM
 
@@ -1620,7 +1620,7 @@ Gets the value of C<WSAEPROCLIM>.
 
 Exceptions:
 
-If the system does not define this constant value, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this value, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 WSAEPROTONOSUPPORT
 
@@ -1630,7 +1630,7 @@ Gets the value of C<WSAEPROTONOSUPPORT>.
 
 Exceptions:
 
-If the system does not define this constant value, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this value, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 WSAEPROTOTYPE
 
@@ -1640,7 +1640,7 @@ Gets the value of C<WSAEPROTOTYPE>.
 
 Exceptions:
 
-If the system does not define this constant value, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this value, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 WSAEPROVIDERFAILEDINIT
 
@@ -1650,7 +1650,7 @@ Gets the value of C<WSAEPROVIDERFAILEDINIT>.
 
 Exceptions:
 
-If the system does not define this constant value, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this value, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 WSAEREFUSED
 
@@ -1660,7 +1660,7 @@ Gets the value of C<WSAEREFUSED>.
 
 Exceptions:
 
-If the system does not define this constant value, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this value, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 WSAEREMOTE
 
@@ -1670,7 +1670,7 @@ Gets the value of C<WSAEREMOTE>.
 
 Exceptions:
 
-If the system does not define this constant value, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this value, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 WSAESHUTDOWN
 
@@ -1680,7 +1680,7 @@ Gets the value of C<WSAESHUTDOWN>.
 
 Exceptions:
 
-If the system does not define this constant value, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this value, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 WSAESOCKTNOSUPPORT
 
@@ -1690,7 +1690,7 @@ Gets the value of C<WSAESOCKTNOSUPPORT>.
 
 Exceptions:
 
-If the system does not define this constant value, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this value, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 WSAESTALE
 
@@ -1700,7 +1700,7 @@ Gets the value of C<WSAESTALE>.
 
 Exceptions:
 
-If the system does not define this constant value, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this value, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 WSAETIMEDOUT
 
@@ -1710,7 +1710,7 @@ Gets the value of C<WSAETIMEDOUT>.
 
 Exceptions:
 
-If the system does not define this constant value, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this value, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 WSAETOOMANYREFS
 
@@ -1720,7 +1720,7 @@ Gets the value of C<WSAETOOMANYREFS>.
 
 Exceptions:
 
-If the system does not define this constant value, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this value, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 WSAEUSERS
 
@@ -1730,7 +1730,7 @@ Gets the value of C<WSAEUSERS>.
 
 Exceptions:
 
-If the system does not define this constant value, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this value, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head2 WSAEWOULDBLOCK
 
@@ -1740,7 +1740,7 @@ Gets the value of C<WSAEWOULDBLOCK>.
 
 Exceptions:
 
-If the system does not define this constant value, an exception is thrown with the error ID set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
+If the system does not define this value, an exception is thrown with C<eval_error_id> set to the basic type ID of the L<Error::NotSupported|SPVM::Error::NotSupported> class.
 
 =head1 Repository
 
