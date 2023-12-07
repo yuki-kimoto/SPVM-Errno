@@ -40,7 +40,7 @@ Sets the value of C<errno>.
 
 Gets the error message corresponding to C<errno> given enough length $max_length to hold the error message.
 
-If $max_length is 0, an appropriate default value is set.
+If $length is 0, an appropriate default value is set.
 
 =head2 E2BIG
 
