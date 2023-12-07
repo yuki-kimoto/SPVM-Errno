@@ -10,7 +10,7 @@ SPVM::Errno - Error Numbers
 
 =head1 Description
 
-The Errno class of L<SPVM> has methods for error numbers defined in the C<errno.h> header of the C language.
+The Errno class of L<SPVM> has methods to manipulate L<errno|https://linux.die.net/man/3/errno> in the C language.
 
 =head1 Usage
 
@@ -19,14 +19,28 @@ The Errno class of L<SPVM> has methods for error numbers defined in the C<errno.
   my $errno = Errno->errno;
   
   my $eagain = Errno->EAGAIN;
+  
+  my $errstring = Errno->
 
 =head2 errno
 
 C<static method errno : int ();>
 
-Gets the current error number.
+Returns the value of C<errno>.
 
-This is the same operation as getting C<errno> in the C language.
+=head2 set_errno
+
+  static method set_errno : void ($errno : int);
+
+Sets the value of C<errno>.
+
+=head2 strerror
+
+  static method strerror : string ($errno : int, $max_length = 0);
+
+Gets the error message corresponding to C<errno> given maximum number of characters $max_length.
+
+If $max_length is 0, appropriate default values is set.
 
 =head2 E2BIG
 

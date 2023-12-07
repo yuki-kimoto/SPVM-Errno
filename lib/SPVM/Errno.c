@@ -25,6 +25,18 @@ int32_t SPVM__Errno__set_errno(SPVM_ENV* env, SPVM_VALUE* stack) {
   return 0;
 }
 
+int32_t SPVM__Errno__strerror(SPVM_ENV* env, SPVM_VALUE* stack) {
+  
+  int32_t error_number = stack[0].ival;
+  int32_t length = stack[1].ival;
+  
+  void* obj_strerror = env->strerror_string(env, stack, error_number, length);
+  
+  stack[0].oval = obj_strerror;
+  
+  return 0;
+}
+
 int32_t SPVM__Errno__E2BIG(SPVM_ENV* env, SPVM_VALUE* stack) {
 
 #if defined(E2BIG)
