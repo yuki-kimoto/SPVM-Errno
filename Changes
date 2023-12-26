@@ -1,3 +1,7 @@
+0.092 2023-12-26
+  [Bug Fix]
+    * Fix the bug that FILE_NAME in native source file does not have the file scope.
+    * Fix the bug that FILE_NAME is wrong name.
 0.091 2023-12-07
   [Document Fix]
     * Add the doc of the set_errno method to the Errno class.

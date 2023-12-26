@@ -9,7 +9,7 @@
 # include <winsock2.h>
 #endif
 
-const char* FILE_NAME = "Sys/Errno.c";
+static const char* FILE_NAME = "Errno.c";
 
 int32_t SPVM__Errno__errno(SPVM_ENV* env, SPVM_VALUE* stack) {
   
