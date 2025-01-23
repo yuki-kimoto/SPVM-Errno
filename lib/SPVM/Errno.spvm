@@ -2,7 +2,7 @@
 # MIT License
 
 class Errno {
-  version "0.092";
+  version "0.093";
   
   native static method errno : int ();
   
