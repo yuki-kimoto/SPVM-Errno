@@ -10,7 +10,7 @@ SPVM::Errno - Error Numbers
 
 =head1 Description
 
-The Errno class of L<SPVM> has methods to manipulate L<errno|https://linux.die.net/man/3/errno> in the C language.
+Errno class in L<SPVM> has methods to manipulate L<errno|https://linux.die.net/man/3/errno> in the C language.
 
 =head1 Usage
 

@@ -36,6 +36,10 @@ sub errno_ok {
   }
 }
 
+my $api = SPVM::api();
+
+my $start_memory_blocks_count = $api->get_memory_blocks_count();
+
 ok(SPVM::TestCase::Errno->errno);
 
 ok(SPVM::TestCase::Errno->set_errno);
@@ -467,5 +471,10 @@ errno_ok('WSAEWOULDBLOCK');
 
 # Version
 is($SPVM::Errno::VERSION, SPVM::Fn->get_version_string('Errno'));
+
+SPVM::Fn->destroy_runtime_permanent_vars;
+
+my $end_memory_blocks_count = $api->get_memory_blocks_count();
+is($end_memory_blocks_count, $start_memory_blocks_count);
 
 done_testing;

@@ -15,7 +15,7 @@ if ($meta) {
 }
 
 my %configure_and_runtime_requires = (
-  'SPVM' => '0.989002',
+  'SPVM' => '0.990042',
 );
 WriteMakefile(
   NAME              => 'SPVM::Errno',
@@ -32,8 +32,8 @@ WriteMakefile(
     resources => {
       repository => {
         type => 'git',
-        url  => '',
-        web  => '',
+        url  => 'https://github.com/yuki-kimoto/SPVM-Errno.git',
+        web  => 'https://github.com/yuki-kimoto/SPVM-Errno',
       },
     },
   },
