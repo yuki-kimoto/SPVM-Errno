@@ -15,7 +15,7 @@ if ($meta) {
 }
 
 my %configure_and_runtime_requires = (
-  'SPVM' => '0.990119',
+  'SPVM' => '0.990120',
 );
 WriteMakefile(
   NAME              => 'SPVM::Errno',

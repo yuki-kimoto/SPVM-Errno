@@ -31,7 +31,7 @@ int32_t SPVM__Errno__strerror(SPVM_ENV* env, SPVM_VALUE* stack) {
   int32_t length = stack[1].ival;
   
   if (!(length >= 0)) {
-    return env->die_v2(env, stack, "$max_length must be greater than or equal to 0.", __func__, FILE_NAME, __LINE__);
+    return env->die(env, stack, "$max_length must be greater than or equal to 0.", __func__, FILE_NAME, __LINE__);
   }
   
   void* obj_strerror = env->strerror_string(env, stack, error_number, length);
@@ -47,7 +47,7 @@ int32_t SPVM__Errno__E2BIG(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = E2BIG;
   return 0;
 #else
-  env->die_v2(env, stack, "E2BIG is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "E2BIG is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -59,7 +59,7 @@ int32_t SPVM__Errno__EACCES(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = EACCES;
   return 0;
 #else
-  env->die_v2(env, stack, "EACCES is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "EACCES is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -71,7 +71,7 @@ int32_t SPVM__Errno__EADDRINUSE(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = EADDRINUSE;
   return 0;
 #else
-  env->die_v2(env, stack, "EADDRINUSE is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "EADDRINUSE is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -83,7 +83,7 @@ int32_t SPVM__Errno__EADDRNOTAVAIL(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = EADDRNOTAVAIL;
   return 0;
 #else
-  env->die_v2(env, stack, "EADDRNOTAVAIL is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "EADDRNOTAVAIL is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -95,7 +95,7 @@ int32_t SPVM__Errno__EAFNOSUPPORT(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = EAFNOSUPPORT;
   return 0;
 #else
-  env->die_v2(env, stack, "EAFNOSUPPORT is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "EAFNOSUPPORT is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -107,7 +107,7 @@ int32_t SPVM__Errno__EAGAIN(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = EAGAIN;
   return 0;
 #else
-  env->die_v2(env, stack, "EAGAIN is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "EAGAIN is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -119,7 +119,7 @@ int32_t SPVM__Errno__EALREADY(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = EALREADY;
   return 0;
 #else
-  env->die_v2(env, stack, "EALREADY is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "EALREADY is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -131,7 +131,7 @@ int32_t SPVM__Errno__EBADE(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = EBADE;
   return 0;
 #else
-  env->die_v2(env, stack, "EBADE is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "EBADE is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -143,7 +143,7 @@ int32_t SPVM__Errno__EBADF(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = EBADF;
   return 0;
 #else
-  env->die_v2(env, stack, "EBADF is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "EBADF is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -155,7 +155,7 @@ int32_t SPVM__Errno__EBADFD(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = EBADFD;
   return 0;
 #else
-  env->die_v2(env, stack, "EBADFD is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "EBADFD is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -167,7 +167,7 @@ int32_t SPVM__Errno__EBADMSG(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = EBADMSG;
   return 0;
 #else
-  env->die_v2(env, stack, "EBADMSG is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "EBADMSG is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -179,7 +179,7 @@ int32_t SPVM__Errno__EBADR(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = EBADR;
   return 0;
 #else
-  env->die_v2(env, stack, "EBADR is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "EBADR is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -191,7 +191,7 @@ int32_t SPVM__Errno__EBADRQC(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = EBADRQC;
   return 0;
 #else
-  env->die_v2(env, stack, "EBADRQC is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "EBADRQC is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -203,7 +203,7 @@ int32_t SPVM__Errno__EBADSLT(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = EBADSLT;
   return 0;
 #else
-  env->die_v2(env, stack, "EBADSLT is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "EBADSLT is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -215,7 +215,7 @@ int32_t SPVM__Errno__EBUSY(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = EBUSY;
   return 0;
 #else
-  env->die_v2(env, stack, "EBUSY is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "EBUSY is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -227,7 +227,7 @@ int32_t SPVM__Errno__ECANCELED(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = ECANCELED;
   return 0;
 #else
-  env->die_v2(env, stack, "ECANCELED is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "ECANCELED is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -239,7 +239,7 @@ int32_t SPVM__Errno__ECHILD(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = ECHILD;
   return 0;
 #else
-  env->die_v2(env, stack, "ECHILD is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "ECHILD is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -251,7 +251,7 @@ int32_t SPVM__Errno__ECHRNG(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = ECHRNG;
   return 0;
 #else
-  env->die_v2(env, stack, "ECHRNG is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "ECHRNG is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -263,7 +263,7 @@ int32_t SPVM__Errno__ECOMM(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = ECOMM;
   return 0;
 #else
-  env->die_v2(env, stack, "ECOMM is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "ECOMM is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -275,7 +275,7 @@ int32_t SPVM__Errno__ECONNABORTED(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = ECONNABORTED;
   return 0;
 #else
-  env->die_v2(env, stack, "ECONNABORTED is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "ECONNABORTED is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -287,7 +287,7 @@ int32_t SPVM__Errno__ECONNREFUSED(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = ECONNREFUSED;
   return 0;
 #else
-  env->die_v2(env, stack, "ECONNREFUSED is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "ECONNREFUSED is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -299,7 +299,7 @@ int32_t SPVM__Errno__ECONNRESET(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = ECONNRESET;
   return 0;
 #else
-  env->die_v2(env, stack, "ECONNRESET is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "ECONNRESET is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -311,7 +311,7 @@ int32_t SPVM__Errno__EDEADLK(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = EDEADLK;
   return 0;
 #else
-  env->die_v2(env, stack, "EDEADLK is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "EDEADLK is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -323,7 +323,7 @@ int32_t SPVM__Errno__EDEADLOCK(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = EDEADLOCK;
   return 0;
 #else
-  env->die_v2(env, stack, "EDEADLOCK is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "EDEADLOCK is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -335,7 +335,7 @@ int32_t SPVM__Errno__EDESTADDRREQ(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = EDESTADDRREQ;
   return 0;
 #else
-  env->die_v2(env, stack, "EDESTADDRREQ is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "EDESTADDRREQ is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -347,7 +347,7 @@ int32_t SPVM__Errno__EDOM(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = EDOM;
   return 0;
 #else
-  env->die_v2(env, stack, "EDOM is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "EDOM is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -359,7 +359,7 @@ int32_t SPVM__Errno__EDQUOT(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = EDQUOT;
   return 0;
 #else
-  env->die_v2(env, stack, "EDQUOT is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "EDQUOT is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -371,7 +371,7 @@ int32_t SPVM__Errno__EEXIST(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = EEXIST;
   return 0;
 #else
-  env->die_v2(env, stack, "EEXIST is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "EEXIST is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -383,7 +383,7 @@ int32_t SPVM__Errno__EFAULT(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = EFAULT;
   return 0;
 #else
-  env->die_v2(env, stack, "EFAULT is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "EFAULT is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -395,7 +395,7 @@ int32_t SPVM__Errno__EFBIG(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = EFBIG;
   return 0;
 #else
-  env->die_v2(env, stack, "EFBIG is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "EFBIG is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -407,7 +407,7 @@ int32_t SPVM__Errno__EHOSTDOWN(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = EHOSTDOWN;
   return 0;
 #else
-  env->die_v2(env, stack, "EHOSTDOWN is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "EHOSTDOWN is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -419,7 +419,7 @@ int32_t SPVM__Errno__EHOSTUNREACH(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = EHOSTUNREACH;
   return 0;
 #else
-  env->die_v2(env, stack, "EHOSTUNREACH is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "EHOSTUNREACH is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -431,7 +431,7 @@ int32_t SPVM__Errno__EIDRM(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = EIDRM;
   return 0;
 #else
-  env->die_v2(env, stack, "EIDRM is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "EIDRM is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -443,7 +443,7 @@ int32_t SPVM__Errno__EILSEQ(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = EILSEQ;
   return 0;
 #else
-  env->die_v2(env, stack, "EILSEQ is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "EILSEQ is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -455,7 +455,7 @@ int32_t SPVM__Errno__EINPROGRESS(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = EINPROGRESS;
   return 0;
 #else
-  env->die_v2(env, stack, "EINPROGRESS is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "EINPROGRESS is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -467,7 +467,7 @@ int32_t SPVM__Errno__EINTR(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = EINTR;
   return 0;
 #else
-  env->die_v2(env, stack, "EINTR is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "EINTR is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -479,7 +479,7 @@ int32_t SPVM__Errno__EINVAL(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = EINVAL;
   return 0;
 #else
-  env->die_v2(env, stack, "EINVAL is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "EINVAL is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -491,7 +491,7 @@ int32_t SPVM__Errno__EIO(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = EIO;
   return 0;
 #else
-  env->die_v2(env, stack, "EIO is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "EIO is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -503,7 +503,7 @@ int32_t SPVM__Errno__EISCONN(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = EISCONN;
   return 0;
 #else
-  env->die_v2(env, stack, "EISCONN is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "EISCONN is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -515,7 +515,7 @@ int32_t SPVM__Errno__EISDIR(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = EISDIR;
   return 0;
 #else
-  env->die_v2(env, stack, "EISDIR is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "EISDIR is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -527,7 +527,7 @@ int32_t SPVM__Errno__EISNAM(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = EISNAM;
   return 0;
 #else
-  env->die_v2(env, stack, "EISNAM is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "EISNAM is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -539,7 +539,7 @@ int32_t SPVM__Errno__EKEYEXPIRED(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = EKEYEXPIRED;
   return 0;
 #else
-  env->die_v2(env, stack, "EKEYEXPIRED is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "EKEYEXPIRED is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -551,7 +551,7 @@ int32_t SPVM__Errno__EKEYREJECTED(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = EKEYREJECTED;
   return 0;
 #else
-  env->die_v2(env, stack, "EKEYREJECTED is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "EKEYREJECTED is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -563,7 +563,7 @@ int32_t SPVM__Errno__EKEYREVOKED(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = EKEYREVOKED;
   return 0;
 #else
-  env->die_v2(env, stack, "EKEYREVOKED is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "EKEYREVOKED is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -575,7 +575,7 @@ int32_t SPVM__Errno__EL2HLT(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = EL2HLT;
   return 0;
 #else
-  env->die_v2(env, stack, "EL2HLT is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "EL2HLT is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -587,7 +587,7 @@ int32_t SPVM__Errno__EL2NSYNC(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = EL2NSYNC;
   return 0;
 #else
-  env->die_v2(env, stack, "EL2NSYNC is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "EL2NSYNC is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -599,7 +599,7 @@ int32_t SPVM__Errno__EL3HLT(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = EL3HLT;
   return 0;
 #else
-  env->die_v2(env, stack, "EL3HLT is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "EL3HLT is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -611,7 +611,7 @@ int32_t SPVM__Errno__EL3RST(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = EL3RST;
   return 0;
 #else
-  env->die_v2(env, stack, "EL3RST is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "EL3RST is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -623,7 +623,7 @@ int32_t SPVM__Errno__ELIBACC(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = ELIBACC;
   return 0;
 #else
-  env->die_v2(env, stack, "ELIBACC is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "ELIBACC is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -635,7 +635,7 @@ int32_t SPVM__Errno__ELIBBAD(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = ELIBBAD;
   return 0;
 #else
-  env->die_v2(env, stack, "ELIBBAD is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "ELIBBAD is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -647,7 +647,7 @@ int32_t SPVM__Errno__ELIBMAX(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = ELIBMAX;
   return 0;
 #else
-  env->die_v2(env, stack, "ELIBMAX is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "ELIBMAX is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -659,7 +659,7 @@ int32_t SPVM__Errno__ELIBSCN(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = ELIBSCN;
   return 0;
 #else
-  env->die_v2(env, stack, "ELIBSCN is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "ELIBSCN is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -671,7 +671,7 @@ int32_t SPVM__Errno__ELIBEXEC(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = ELIBEXEC;
   return 0;
 #else
-  env->die_v2(env, stack, "ELIBEXEC is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "ELIBEXEC is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -683,7 +683,7 @@ int32_t SPVM__Errno__ELOOP(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = ELOOP;
   return 0;
 #else
-  env->die_v2(env, stack, "ELOOP is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "ELOOP is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -695,7 +695,7 @@ int32_t SPVM__Errno__EMEDIUMTYPE(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = EMEDIUMTYPE;
   return 0;
 #else
-  env->die_v2(env, stack, "EMEDIUMTYPE is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "EMEDIUMTYPE is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -707,7 +707,7 @@ int32_t SPVM__Errno__EMFILE(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = EMFILE;
   return 0;
 #else
-  env->die_v2(env, stack, "EMFILE is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "EMFILE is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -719,7 +719,7 @@ int32_t SPVM__Errno__EMLINK(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = EMLINK;
   return 0;
 #else
-  env->die_v2(env, stack, "EMLINK is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "EMLINK is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -731,7 +731,7 @@ int32_t SPVM__Errno__EMSGSIZE(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = EMSGSIZE;
   return 0;
 #else
-  env->die_v2(env, stack, "EMSGSIZE is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "EMSGSIZE is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -743,7 +743,7 @@ int32_t SPVM__Errno__EMULTIHOP(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = EMULTIHOP;
   return 0;
 #else
-  env->die_v2(env, stack, "EMULTIHOP is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "EMULTIHOP is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -755,7 +755,7 @@ int32_t SPVM__Errno__ENAMETOOLONG(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = ENAMETOOLONG;
   return 0;
 #else
-  env->die_v2(env, stack, "ENAMETOOLONG is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "ENAMETOOLONG is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -767,7 +767,7 @@ int32_t SPVM__Errno__ENETDOWN(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = ENETDOWN;
   return 0;
 #else
-  env->die_v2(env, stack, "ENETDOWN is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "ENETDOWN is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -779,7 +779,7 @@ int32_t SPVM__Errno__ENETRESET(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = ENETRESET;
   return 0;
 #else
-  env->die_v2(env, stack, "ENETRESET is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "ENETRESET is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -791,7 +791,7 @@ int32_t SPVM__Errno__ENETUNREACH(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = ENETUNREACH;
   return 0;
 #else
-  env->die_v2(env, stack, "ENETUNREACH is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "ENETUNREACH is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -803,7 +803,7 @@ int32_t SPVM__Errno__ENFILE(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = ENFILE;
   return 0;
 #else
-  env->die_v2(env, stack, "ENFILE is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "ENFILE is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -815,7 +815,7 @@ int32_t SPVM__Errno__ENOBUFS(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = ENOBUFS;
   return 0;
 #else
-  env->die_v2(env, stack, "ENOBUFS is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "ENOBUFS is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -827,7 +827,7 @@ int32_t SPVM__Errno__ENODATA(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = ENODATA;
   return 0;
 #else
-  env->die_v2(env, stack, "ENODATA is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "ENODATA is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -839,7 +839,7 @@ int32_t SPVM__Errno__ENODEV(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = ENODEV;
   return 0;
 #else
-  env->die_v2(env, stack, "ENODEV is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "ENODEV is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -851,7 +851,7 @@ int32_t SPVM__Errno__ENOENT(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = ENOENT;
   return 0;
 #else
-  env->die_v2(env, stack, "ENOENT is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "ENOENT is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -863,7 +863,7 @@ int32_t SPVM__Errno__ENOEXEC(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = ENOEXEC;
   return 0;
 #else
-  env->die_v2(env, stack, "ENOEXEC is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "ENOEXEC is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -875,7 +875,7 @@ int32_t SPVM__Errno__ENOKEY(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = ENOKEY;
   return 0;
 #else
-  env->die_v2(env, stack, "ENOKEY is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "ENOKEY is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -887,7 +887,7 @@ int32_t SPVM__Errno__ENOLCK(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = ENOLCK;
   return 0;
 #else
-  env->die_v2(env, stack, "ENOLCK is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "ENOLCK is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -899,7 +899,7 @@ int32_t SPVM__Errno__ENOLINK(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = ENOLINK;
   return 0;
 #else
-  env->die_v2(env, stack, "ENOLINK is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "ENOLINK is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -911,7 +911,7 @@ int32_t SPVM__Errno__ENOMEDIUM(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = ENOMEDIUM;
   return 0;
 #else
-  env->die_v2(env, stack, "ENOMEDIUM is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "ENOMEDIUM is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -923,7 +923,7 @@ int32_t SPVM__Errno__ENOMEM(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = ENOMEM;
   return 0;
 #else
-  env->die_v2(env, stack, "ENOMEM is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "ENOMEM is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -935,7 +935,7 @@ int32_t SPVM__Errno__ENOMSG(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = ENOMSG;
   return 0;
 #else
-  env->die_v2(env, stack, "ENOMSG is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "ENOMSG is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -947,7 +947,7 @@ int32_t SPVM__Errno__ENONET(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = ENONET;
   return 0;
 #else
-  env->die_v2(env, stack, "ENONET is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "ENONET is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -959,7 +959,7 @@ int32_t SPVM__Errno__ENOPKG(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = ENOPKG;
   return 0;
 #else
-  env->die_v2(env, stack, "ENOPKG is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "ENOPKG is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -971,7 +971,7 @@ int32_t SPVM__Errno__ENOPROTOOPT(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = ENOPROTOOPT;
   return 0;
 #else
-  env->die_v2(env, stack, "ENOPROTOOPT is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "ENOPROTOOPT is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -983,7 +983,7 @@ int32_t SPVM__Errno__ENOSPC(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = ENOSPC;
   return 0;
 #else
-  env->die_v2(env, stack, "ENOSPC is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "ENOSPC is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -995,7 +995,7 @@ int32_t SPVM__Errno__ENOSR(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = ENOSR;
   return 0;
 #else
-  env->die_v2(env, stack, "ENOSR is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "ENOSR is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -1007,7 +1007,7 @@ int32_t SPVM__Errno__ENOSTR(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = ENOSTR;
   return 0;
 #else
-  env->die_v2(env, stack, "ENOSTR is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "ENOSTR is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -1019,7 +1019,7 @@ int32_t SPVM__Errno__ENOSYS(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = ENOSYS;
   return 0;
 #else
-  env->die_v2(env, stack, "ENOSYS is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "ENOSYS is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -1031,7 +1031,7 @@ int32_t SPVM__Errno__ENOTBLK(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = ENOTBLK;
   return 0;
 #else
-  env->die_v2(env, stack, "ENOTBLK is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "ENOTBLK is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -1043,7 +1043,7 @@ int32_t SPVM__Errno__ENOTCONN(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = ENOTCONN;
   return 0;
 #else
-  env->die_v2(env, stack, "ENOTCONN is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "ENOTCONN is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -1055,7 +1055,7 @@ int32_t SPVM__Errno__ENOTDIR(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = ENOTDIR;
   return 0;
 #else
-  env->die_v2(env, stack, "ENOTDIR is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "ENOTDIR is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -1067,7 +1067,7 @@ int32_t SPVM__Errno__ENOTEMPTY(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = ENOTEMPTY;
   return 0;
 #else
-  env->die_v2(env, stack, "ENOTEMPTY is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "ENOTEMPTY is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -1079,7 +1079,7 @@ int32_t SPVM__Errno__ENOTSOCK(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = ENOTSOCK;
   return 0;
 #else
-  env->die_v2(env, stack, "ENOTSOCK is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "ENOTSOCK is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -1091,7 +1091,7 @@ int32_t SPVM__Errno__ENOTSUP(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = ENOTSUP;
   return 0;
 #else
-  env->die_v2(env, stack, "ENOTSUP is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "ENOTSUP is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -1103,7 +1103,7 @@ int32_t SPVM__Errno__ENOTTY(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = ENOTTY;
   return 0;
 #else
-  env->die_v2(env, stack, "ENOTTY is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "ENOTTY is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -1115,7 +1115,7 @@ int32_t SPVM__Errno__ENOTUNIQ(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = ENOTUNIQ;
   return 0;
 #else
-  env->die_v2(env, stack, "ENOTUNIQ is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "ENOTUNIQ is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -1127,7 +1127,7 @@ int32_t SPVM__Errno__ENXIO(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = ENXIO;
   return 0;
 #else
-  env->die_v2(env, stack, "ENXIO is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "ENXIO is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -1139,7 +1139,7 @@ int32_t SPVM__Errno__EOPNOTSUPP(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = EOPNOTSUPP;
   return 0;
 #else
-  env->die_v2(env, stack, "EOPNOTSUPP is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "EOPNOTSUPP is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -1151,7 +1151,7 @@ int32_t SPVM__Errno__EOVERFLOW(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = EOVERFLOW;
   return 0;
 #else
-  env->die_v2(env, stack, "EOVERFLOW is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "EOVERFLOW is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -1163,7 +1163,7 @@ int32_t SPVM__Errno__EPERM(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = EPERM;
   return 0;
 #else
-  env->die_v2(env, stack, "EPERM is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "EPERM is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -1175,7 +1175,7 @@ int32_t SPVM__Errno__EPFNOSUPPORT(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = EPFNOSUPPORT;
   return 0;
 #else
-  env->die_v2(env, stack, "EPFNOSUPPORT is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "EPFNOSUPPORT is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -1187,7 +1187,7 @@ int32_t SPVM__Errno__EPIPE(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = EPIPE;
   return 0;
 #else
-  env->die_v2(env, stack, "EPIPE is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "EPIPE is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -1199,7 +1199,7 @@ int32_t SPVM__Errno__EPROTO(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = EPROTO;
   return 0;
 #else
-  env->die_v2(env, stack, "EPROTO is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "EPROTO is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -1211,7 +1211,7 @@ int32_t SPVM__Errno__EPROTONOSUPPORT(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = EPROTONOSUPPORT;
   return 0;
 #else
-  env->die_v2(env, stack, "EPROTONOSUPPORT is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "EPROTONOSUPPORT is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -1223,7 +1223,7 @@ int32_t SPVM__Errno__EPROTOTYPE(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = EPROTOTYPE;
   return 0;
 #else
-  env->die_v2(env, stack, "EPROTOTYPE is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "EPROTOTYPE is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -1235,7 +1235,7 @@ int32_t SPVM__Errno__ERANGE(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = ERANGE;
   return 0;
 #else
-  env->die_v2(env, stack, "ERANGE is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "ERANGE is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -1247,7 +1247,7 @@ int32_t SPVM__Errno__EREMCHG(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = EREMCHG;
   return 0;
 #else
-  env->die_v2(env, stack, "EREMCHG is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "EREMCHG is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -1259,7 +1259,7 @@ int32_t SPVM__Errno__EREMOTE(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = EREMOTE;
   return 0;
 #else
-  env->die_v2(env, stack, "EREMOTE is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "EREMOTE is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -1271,7 +1271,7 @@ int32_t SPVM__Errno__EREMOTEIO(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = EREMOTEIO;
   return 0;
 #else
-  env->die_v2(env, stack, "EREMOTEIO is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "EREMOTEIO is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -1283,7 +1283,7 @@ int32_t SPVM__Errno__ERESTART(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = ERESTART;
   return 0;
 #else
-  env->die_v2(env, stack, "ERESTART is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "ERESTART is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -1295,7 +1295,7 @@ int32_t SPVM__Errno__EROFS(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = EROFS;
   return 0;
 #else
-  env->die_v2(env, stack, "EROFS is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "EROFS is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -1307,7 +1307,7 @@ int32_t SPVM__Errno__ESHUTDOWN(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = ESHUTDOWN;
   return 0;
 #else
-  env->die_v2(env, stack, "ESHUTDOWN is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "ESHUTDOWN is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -1319,7 +1319,7 @@ int32_t SPVM__Errno__ESPIPE(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = ESPIPE;
   return 0;
 #else
-  env->die_v2(env, stack, "ESPIPE is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "ESPIPE is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -1331,7 +1331,7 @@ int32_t SPVM__Errno__ESOCKTNOSUPPORT(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = ESOCKTNOSUPPORT;
   return 0;
 #else
-  env->die_v2(env, stack, "ESOCKTNOSUPPORT is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "ESOCKTNOSUPPORT is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -1343,7 +1343,7 @@ int32_t SPVM__Errno__ESRCH(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = ESRCH;
   return 0;
 #else
-  env->die_v2(env, stack, "ESRCH is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "ESRCH is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -1355,7 +1355,7 @@ int32_t SPVM__Errno__ESTALE(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = ESTALE;
   return 0;
 #else
-  env->die_v2(env, stack, "ESTALE is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "ESTALE is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -1367,7 +1367,7 @@ int32_t SPVM__Errno__ESTRPIPE(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = ESTRPIPE;
   return 0;
 #else
-  env->die_v2(env, stack, "ESTRPIPE is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "ESTRPIPE is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -1379,7 +1379,7 @@ int32_t SPVM__Errno__ETIME(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = ETIME;
   return 0;
 #else
-  env->die_v2(env, stack, "ETIME is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "ETIME is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -1391,7 +1391,7 @@ int32_t SPVM__Errno__ETIMEDOUT(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = ETIMEDOUT;
   return 0;
 #else
-  env->die_v2(env, stack, "ETIMEDOUT is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "ETIMEDOUT is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -1403,7 +1403,7 @@ int32_t SPVM__Errno__ETXTBSY(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = ETXTBSY;
   return 0;
 #else
-  env->die_v2(env, stack, "ETXTBSY is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "ETXTBSY is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -1415,7 +1415,7 @@ int32_t SPVM__Errno__EUCLEAN(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = EUCLEAN;
   return 0;
 #else
-  env->die_v2(env, stack, "EUCLEAN is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "EUCLEAN is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -1427,7 +1427,7 @@ int32_t SPVM__Errno__EUNATCH(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = EUNATCH;
   return 0;
 #else
-  env->die_v2(env, stack, "EUNATCH is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "EUNATCH is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -1439,7 +1439,7 @@ int32_t SPVM__Errno__EUSERS(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = EUSERS;
   return 0;
 #else
-  env->die_v2(env, stack, "EUSERS is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "EUSERS is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -1451,7 +1451,7 @@ int32_t SPVM__Errno__EWOULDBLOCK(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = EWOULDBLOCK;
   return 0;
 #else
-  env->die_v2(env, stack, "EWOULDBLOCK is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "EWOULDBLOCK is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -1463,7 +1463,7 @@ int32_t SPVM__Errno__EXDEV(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = EXDEV;
   return 0;
 #else
-  env->die_v2(env, stack, "EXDEV is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "EXDEV is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -1475,7 +1475,7 @@ int32_t SPVM__Errno__EXFULL(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = EXFULL;
   return 0;
 #else
-  env->die_v2(env, stack, "EXFULL is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "EXFULL is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
   
@@ -1487,7 +1487,7 @@ int32_t SPVM__Errno__WSAEACCES(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = WSAEACCES;
   return 0;
 #else
-  env->die_v2(env, stack, "WSAEACCES is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "WSAEACCES is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
 
@@ -1499,7 +1499,7 @@ int32_t SPVM__Errno__WSAEADDRINUSE(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = WSAEADDRINUSE;
   return 0;
 #else
-  env->die_v2(env, stack, "WSAEADDRINUSE is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "WSAEADDRINUSE is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
 
@@ -1511,7 +1511,7 @@ int32_t SPVM__Errno__WSAEADDRNOTAVAIL(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = WSAEADDRNOTAVAIL;
   return 0;
 #else
-  env->die_v2(env, stack, "WSAEADDRNOTAVAIL is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "WSAEADDRNOTAVAIL is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
 
@@ -1523,7 +1523,7 @@ int32_t SPVM__Errno__WSAEAFNOSUPPORT(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = WSAEAFNOSUPPORT;
   return 0;
 #else
-  env->die_v2(env, stack, "WSAEAFNOSUPPORT is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "WSAEAFNOSUPPORT is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
 
@@ -1535,7 +1535,7 @@ int32_t SPVM__Errno__WSAEALREADY(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = WSAEALREADY;
   return 0;
 #else
-  env->die_v2(env, stack, "WSAEALREADY is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "WSAEALREADY is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
 
@@ -1547,7 +1547,7 @@ int32_t SPVM__Errno__WSAEBADF(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = WSAEBADF;
   return 0;
 #else
-  env->die_v2(env, stack, "WSAEBADF is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "WSAEBADF is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
 
@@ -1559,7 +1559,7 @@ int32_t SPVM__Errno__WSAECANCELLED(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = WSAECANCELLED;
   return 0;
 #else
-  env->die_v2(env, stack, "WSAECANCELLED is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "WSAECANCELLED is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
 
@@ -1571,7 +1571,7 @@ int32_t SPVM__Errno__WSAECONNABORTED(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = WSAECONNABORTED;
   return 0;
 #else
-  env->die_v2(env, stack, "WSAECONNABORTED is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "WSAECONNABORTED is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
 
@@ -1583,7 +1583,7 @@ int32_t SPVM__Errno__WSAECONNREFUSED(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = WSAECONNREFUSED;
   return 0;
 #else
-  env->die_v2(env, stack, "WSAECONNREFUSED is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "WSAECONNREFUSED is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
 
@@ -1595,7 +1595,7 @@ int32_t SPVM__Errno__WSAECONNRESET(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = WSAECONNRESET;
   return 0;
 #else
-  env->die_v2(env, stack, "WSAECONNRESET is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "WSAECONNRESET is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
 
@@ -1607,7 +1607,7 @@ int32_t SPVM__Errno__WSAEDESTADDRREQ(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = WSAEDESTADDRREQ;
   return 0;
 #else
-  env->die_v2(env, stack, "WSAEDESTADDRREQ is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "WSAEDESTADDRREQ is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
 
@@ -1619,7 +1619,7 @@ int32_t SPVM__Errno__WSAEDISCON(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = WSAEDISCON;
   return 0;
 #else
-  env->die_v2(env, stack, "WSAEDISCON is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "WSAEDISCON is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
 
@@ -1631,7 +1631,7 @@ int32_t SPVM__Errno__WSAEDQUOT(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = WSAEDQUOT;
   return 0;
 #else
-  env->die_v2(env, stack, "WSAEDQUOT is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "WSAEDQUOT is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
 
@@ -1643,7 +1643,7 @@ int32_t SPVM__Errno__WSAEFAULT(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = WSAEFAULT;
   return 0;
 #else
-  env->die_v2(env, stack, "WSAEFAULT is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "WSAEFAULT is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
 
@@ -1655,7 +1655,7 @@ int32_t SPVM__Errno__WSAEHOSTDOWN(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = WSAEHOSTDOWN;
   return 0;
 #else
-  env->die_v2(env, stack, "WSAEHOSTDOWN is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "WSAEHOSTDOWN is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
 
@@ -1667,7 +1667,7 @@ int32_t SPVM__Errno__WSAEHOSTUNREACH(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = WSAEHOSTUNREACH;
   return 0;
 #else
-  env->die_v2(env, stack, "WSAEHOSTUNREACH is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "WSAEHOSTUNREACH is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
 
@@ -1679,7 +1679,7 @@ int32_t SPVM__Errno__WSAEINPROGRESS(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = WSAEINPROGRESS;
   return 0;
 #else
-  env->die_v2(env, stack, "WSAEINPROGRESS is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "WSAEINPROGRESS is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
 
@@ -1691,7 +1691,7 @@ int32_t SPVM__Errno__WSAEINTR(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = WSAEINTR;
   return 0;
 #else
-  env->die_v2(env, stack, "WSAEINTR is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "WSAEINTR is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
 
@@ -1703,7 +1703,7 @@ int32_t SPVM__Errno__WSAEINVAL(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = WSAEINVAL;
   return 0;
 #else
-  env->die_v2(env, stack, "WSAEINVAL is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "WSAEINVAL is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
 
@@ -1715,7 +1715,7 @@ int32_t SPVM__Errno__WSAEINVALIDPROCTABLE(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = WSAEINVALIDPROCTABLE;
   return 0;
 #else
-  env->die_v2(env, stack, "WSAEINVALIDPROCTABLE is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "WSAEINVALIDPROCTABLE is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
 
@@ -1727,7 +1727,7 @@ int32_t SPVM__Errno__WSAEINVALIDPROVIDER(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = WSAEINVALIDPROVIDER;
   return 0;
 #else
-  env->die_v2(env, stack, "WSAEINVALIDPROVIDER is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "WSAEINVALIDPROVIDER is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
 
@@ -1739,7 +1739,7 @@ int32_t SPVM__Errno__WSAEISCONN(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = WSAEISCONN;
   return 0;
 #else
-  env->die_v2(env, stack, "WSAEISCONN is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "WSAEISCONN is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
 
@@ -1751,7 +1751,7 @@ int32_t SPVM__Errno__WSAELOOP(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = WSAELOOP;
   return 0;
 #else
-  env->die_v2(env, stack, "WSAELOOP is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "WSAELOOP is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
 
@@ -1763,7 +1763,7 @@ int32_t SPVM__Errno__WSAEMFILE(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = WSAEMFILE;
   return 0;
 #else
-  env->die_v2(env, stack, "WSAEMFILE is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "WSAEMFILE is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
 
@@ -1775,7 +1775,7 @@ int32_t SPVM__Errno__WSAEMSGSIZE(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = WSAEMSGSIZE;
   return 0;
 #else
-  env->die_v2(env, stack, "WSAEMSGSIZE is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "WSAEMSGSIZE is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
 
@@ -1787,7 +1787,7 @@ int32_t SPVM__Errno__WSAENAMETOOLONG(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = WSAENAMETOOLONG;
   return 0;
 #else
-  env->die_v2(env, stack, "WSAENAMETOOLONG is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "WSAENAMETOOLONG is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
 
@@ -1799,7 +1799,7 @@ int32_t SPVM__Errno__WSAENETDOWN(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = WSAENETDOWN;
   return 0;
 #else
-  env->die_v2(env, stack, "WSAENETDOWN is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "WSAENETDOWN is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
 
@@ -1811,7 +1811,7 @@ int32_t SPVM__Errno__WSAENETRESET(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = WSAENETRESET;
   return 0;
 #else
-  env->die_v2(env, stack, "WSAENETRESET is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "WSAENETRESET is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
 
@@ -1823,7 +1823,7 @@ int32_t SPVM__Errno__WSAENETUNREACH(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = WSAENETUNREACH;
   return 0;
 #else
-  env->die_v2(env, stack, "WSAENETUNREACH is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "WSAENETUNREACH is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
 
@@ -1835,7 +1835,7 @@ int32_t SPVM__Errno__WSAENOBUFS(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = WSAENOBUFS;
   return 0;
 #else
-  env->die_v2(env, stack, "WSAENOBUFS is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "WSAENOBUFS is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
 
@@ -1847,7 +1847,7 @@ int32_t SPVM__Errno__WSAENOMORE(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = WSAENOMORE;
   return 0;
 #else
-  env->die_v2(env, stack, "WSAENOMORE is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "WSAENOMORE is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
 
@@ -1859,7 +1859,7 @@ int32_t SPVM__Errno__WSAENOPROTOOPT(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = WSAENOPROTOOPT;
   return 0;
 #else
-  env->die_v2(env, stack, "WSAENOPROTOOPT is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "WSAENOPROTOOPT is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
 
@@ -1871,7 +1871,7 @@ int32_t SPVM__Errno__WSAENOTCONN(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = WSAENOTCONN;
   return 0;
 #else
-  env->die_v2(env, stack, "WSAENOTCONN is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "WSAENOTCONN is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
 
@@ -1883,7 +1883,7 @@ int32_t SPVM__Errno__WSAENOTEMPTY(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = WSAENOTEMPTY;
   return 0;
 #else
-  env->die_v2(env, stack, "WSAENOTEMPTY is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "WSAENOTEMPTY is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
 
@@ -1895,7 +1895,7 @@ int32_t SPVM__Errno__WSAENOTSOCK(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = WSAENOTSOCK;
   return 0;
 #else
-  env->die_v2(env, stack, "WSAENOTSOCK is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "WSAENOTSOCK is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
 
@@ -1907,7 +1907,7 @@ int32_t SPVM__Errno__WSAEOPNOTSUPP(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = WSAEOPNOTSUPP;
   return 0;
 #else
-  env->die_v2(env, stack, "WSAEOPNOTSUPP is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "WSAEOPNOTSUPP is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
 
@@ -1919,7 +1919,7 @@ int32_t SPVM__Errno__WSAEPFNOSUPPORT(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = WSAEPFNOSUPPORT;
   return 0;
 #else
-  env->die_v2(env, stack, "WSAEPFNOSUPPORT is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "WSAEPFNOSUPPORT is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
 
@@ -1931,7 +1931,7 @@ int32_t SPVM__Errno__WSAEPROCLIM(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = WSAEPROCLIM;
   return 0;
 #else
-  env->die_v2(env, stack, "WSAEPROCLIM is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "WSAEPROCLIM is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
 
@@ -1943,7 +1943,7 @@ int32_t SPVM__Errno__WSAEPROTONOSUPPORT(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = WSAEPROTONOSUPPORT;
   return 0;
 #else
-  env->die_v2(env, stack, "WSAEPROTONOSUPPORT is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "WSAEPROTONOSUPPORT is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
 
@@ -1955,7 +1955,7 @@ int32_t SPVM__Errno__WSAEPROTOTYPE(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = WSAEPROTOTYPE;
   return 0;
 #else
-  env->die_v2(env, stack, "WSAEPROTOTYPE is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "WSAEPROTOTYPE is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
 
@@ -1967,7 +1967,7 @@ int32_t SPVM__Errno__WSAEPROVIDERFAILEDINIT(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = WSAEPROVIDERFAILEDINIT;
   return 0;
 #else
-  env->die_v2(env, stack, "WSAEPROVIDERFAILEDINIT is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "WSAEPROVIDERFAILEDINIT is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
 
@@ -1979,7 +1979,7 @@ int32_t SPVM__Errno__WSAEREFUSED(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = WSAEREFUSED;
   return 0;
 #else
-  env->die_v2(env, stack, "WSAEREFUSED is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "WSAEREFUSED is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
 
@@ -1991,7 +1991,7 @@ int32_t SPVM__Errno__WSAEREMOTE(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = WSAEREMOTE;
   return 0;
 #else
-  env->die_v2(env, stack, "WSAEREMOTE is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "WSAEREMOTE is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
 
@@ -2003,7 +2003,7 @@ int32_t SPVM__Errno__WSAESHUTDOWN(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = WSAESHUTDOWN;
   return 0;
 #else
-  env->die_v2(env, stack, "WSAESHUTDOWN is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "WSAESHUTDOWN is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
 
@@ -2015,7 +2015,7 @@ int32_t SPVM__Errno__WSAESOCKTNOSUPPORT(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = WSAESOCKTNOSUPPORT;
   return 0;
 #else
-  env->die_v2(env, stack, "WSAESOCKTNOSUPPORT is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "WSAESOCKTNOSUPPORT is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
 
@@ -2027,7 +2027,7 @@ int32_t SPVM__Errno__WSAESTALE(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = WSAESTALE;
   return 0;
 #else
-  env->die_v2(env, stack, "WSAESTALE is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "WSAESTALE is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
 
@@ -2039,7 +2039,7 @@ int32_t SPVM__Errno__WSAETIMEDOUT(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = WSAETIMEDOUT;
   return 0;
 #else
-  env->die_v2(env, stack, "WSAETIMEDOUT is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "WSAETIMEDOUT is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
 
@@ -2051,7 +2051,7 @@ int32_t SPVM__Errno__WSAETOOMANYREFS(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = WSAETOOMANYREFS;
   return 0;
 #else
-  env->die_v2(env, stack, "WSAETOOMANYREFS is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "WSAETOOMANYREFS is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
 
@@ -2063,7 +2063,7 @@ int32_t SPVM__Errno__WSAEUSERS(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = WSAEUSERS;
   return 0;
 #else
-  env->die_v2(env, stack, "WSAEUSERS is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "WSAEUSERS is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
 
@@ -2075,7 +2075,7 @@ int32_t SPVM__Errno__WSAEWOULDBLOCK(SPVM_ENV* env, SPVM_VALUE* stack) {
   stack[0].ival = WSAEWOULDBLOCK;
   return 0;
 #else
-  env->die_v2(env, stack, "WSAEWOULDBLOCK is not defined in this system", __func__, FILE_NAME, __LINE__);
+  env->die(env, stack, "WSAEWOULDBLOCK is not defined in this system", __func__, FILE_NAME, __LINE__);
   return SPVM_NATIVE_C_BASIC_TYPE_ID_ERROR_NOT_SUPPORTED_CLASS;
 #endif
 
