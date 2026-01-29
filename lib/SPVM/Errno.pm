@@ -1,6 +1,6 @@
 package SPVM::Errno;
 
-our $VERSION = "0.094";
+our $VERSION = "0.095";
 
 1;
 
