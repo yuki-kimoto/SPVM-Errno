@@ -1,6 +1,14 @@
 // Copyright (c) 2023 Yuki Kimoto
 // MIT License
 
+#ifdef __linux__
+  // Enable X/Open System Interfaces (SUSv4) functions and POSIX.1-2008 standard functions
+  #define _XOPEN_SOURCE 700
+
+  // Enable BSD and System V extensions
+  #define _DEFAULT_SOURCE
+#endif
+
 #include "spvm_native.h"
 
 #include <errno.h>
