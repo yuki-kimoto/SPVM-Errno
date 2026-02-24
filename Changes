@@ -1,3 +1,8 @@
+0.097 2025-02-24
+  [Bug Fix]
+    * Fix a bug where some Errno constants (such as EBADFD) disappeared on certain environments due to the C99 portability changes in version 0.096. This was resolved by properly defining _XOPEN_SOURCE and _DEFAULT_SOURCE in the native code.  [Test]
+    * Add a comprehensive and strict test suite that validates all 100+ Errno/WSA constants against native OS values for Linux, macOS, and Windows.
+  
 0.096 2025-02-23
   [Changes]
     * Change the C language standard from GNU99 to C99 to improve portability.
