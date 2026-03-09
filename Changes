@@ -1,3 +1,8 @@
+0.098 2026-03-10
+  [Internal Changes]
+    * Use native types in all places.
+  [Requirement Changes]
+    * Require SPVM 0.990143.
 0.097 2025-02-24
   [Bug Fix]
     * Fix a bug where some Errno constants (such as EBADFD) disappeared on certain environments due to the C99 portability changes in version 0.096. This was resolved by properly defining _XOPEN_SOURCE and _DEFAULT_SOURCE in the native code.  [Test]
